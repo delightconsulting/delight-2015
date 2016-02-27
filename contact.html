@@ -1,0 +1,45 @@
+---
+layout: page
+title: Contact
+excerpt: Delight is a software development studio. Our goal is to bring delightful experiences to clients and users.
+permalink: /contact/
+---
+
+<section class="hero is-info is-left is-textured">
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title is-2">
+        {{page.title}}
+      </h1>
+      <h2 class="subtitle is-4">
+        Send us a message, we don’t bite.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <form accept-charset="UTF-8" action="//formspree.io/shane@delight.consulting" method="POST">
+            <p class="control has-icon">
+                <input type="text" class="input" name="name" placeholder="Your Name">
+                <i class="fa fa-user"></i>
+            </p>
+            <p class="control has-icon">
+              <input type="email" class="input" name="_replyto" placeholder="Your Email">
+              <i class="fa fa-envelope"></i>
+            </p>
+            <p class="control">
+              <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+            </p>
+            <input type="hidden" name="_cc" value="hunter@delight.consulting" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_subject" value="Delight Contact Form Submission" />
+            <input type="hidden" name="_next" value="{{ "/thank-you" | prepend: site.github.url }}" />
+            <p class="control">
+              <input type="submit" class="button is-warning is-bold is-medium" value="Send Message">
+            </p>
+
+        </form>
+    </div>
+</section>
