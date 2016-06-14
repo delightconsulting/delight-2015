@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Custom software for your business. Save time, money, and manpower.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://delight.consulting" # the base hostname & protocol for your site
-twitter_username: delightconsulting
+twitter_username: trydelight
 github_username:  delightconsulting
 
 # Exclude these files when building the _site folder
